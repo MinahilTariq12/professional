@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    student = []
+    values = []
+    names = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student.append([name, score])
+    for items in student:
+        values.append(items[1])
+    values.sort()
+    for items in student:
+        if items[1] == values[1]:
+            names.append(items[0])
+    names.sort()
+    for name in names:
+        print(name)
